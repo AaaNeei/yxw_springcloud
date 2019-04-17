@@ -46,9 +46,9 @@ public class YxwZkLock extends ZkAbstractLock {
         /**
          * 向zk注册监听
          */
-        zkClient.subscribeDataChanges(PATH, iZkDataListener);
+        zkClient.subscribeDataChanges(PATH_LOCK, iZkDataListener);
 
-        if (zkClient.exists(PATH)) {
+        if (zkClient.exists(PATH_LOCK)) {
             //如果该节点存在
             countDownLatch = new CountDownLatch(1);
             //创建countDownLatch实现线程等待
@@ -61,14 +61,14 @@ public class YxwZkLock extends ZkAbstractLock {
         /**
          *等待结束删除监听
          */
-        zkClient.unsubscribeDataChanges(PATH, iZkDataListener);
+        zkClient.unsubscribeDataChanges(PATH_LOCK, iZkDataListener);
     }
 
     @Override
     Boolean tryLock() {
 
         try {
-            zkClient.createEphemeral(PATH);
+            zkClient.createEphemeral(PATH_LOCK);
             logger.info(zkClient.toString() + "创建节点成功,获取到锁");
             return true;
         } catch (Exception e) {

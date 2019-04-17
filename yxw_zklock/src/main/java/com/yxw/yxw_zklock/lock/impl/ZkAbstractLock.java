@@ -19,10 +19,10 @@ public abstract class ZkAbstractLock implements Lock {
 
     Logger logger = LoggerFactory.getLogger(ZkAbstractLock.class);
 
-    @Value("{zk.connection.addrs}")
+    @Value("{yxw.zookeeper.addrs}")
     private String addrs;
     protected ZkClient zkClient = new ZkClient(addrs);
-    protected static final String PATH = "/lock";
+    protected static final String PATH_LOCK = "/lock";
 
 
     @Override

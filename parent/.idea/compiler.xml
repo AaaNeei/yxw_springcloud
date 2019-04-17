@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="parent" />
+        <module name="yxw_configserver" />
+        <module name="yxw_eureka" />
+        <module name="yxw_redis" />
+        <module name="yxw_rocketmq" />
+        <module name="yxw_zklock" />
+        <module name="yxw_zuul" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

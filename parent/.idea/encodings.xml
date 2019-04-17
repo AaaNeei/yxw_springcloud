@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/yxw_configserver" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/yxw_euerka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/yxw_redis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/yxw_rocketmq" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/yxw_zklock" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/yxw_zuul" charset="UTF-8" />
+  </component>
+</project>
